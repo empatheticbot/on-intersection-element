@@ -1,7 +1,7 @@
 {
-  "name": "@empatheticbot/template-element",
+  "name": "@empatheticbot/on-intersection-element",
   "version": "0.1.0",
-  "description": "Template for new custom elements.",
+  "description": "Custom Element used to hide and show elements based on intersection with other elements.",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://sledsworth@github.com/empatheticbot/date-element.git"
+    "url": "git+https://sledsworth@github.com/empatheticbot/on-intersection-element.git"
   },
   "keywords": [
     "custom",
@@ -31,9 +31,9 @@
   "author": "Steve Ledsworth",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/empatheticbot/template-element/issues"
+    "url": "https://github.com/empatheticbot/on-intersection-element/issues"
   },
-  "homepage": "https://github.com/empatheticbot/template-element#readme",
+  "homepage": "https://github.com/empatheticbot/on-intersection-element#readme",
   "devDependencies": {
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",

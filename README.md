@@ -1,3 +1,3 @@
-# template-element
+# On Intersection Element
 
-Custom Element template project.
+Custom Element used to hide and show elements based on intersection with other elements.
