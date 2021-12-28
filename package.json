@@ -1,7 +1,7 @@
 {
   "name": "@empatheticbot/on-intersection-element",
   "version": "0.1.0",
-  "description": "Custom Element used to hide and show elements based on intersection with other elements.",
+  "description": "Custom Element used to hide and show elements based on whether the viewport is intersecting other elements.",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
@@ -13,7 +13,8 @@
     "prebuild": "npm run clean && npm run lint && mkdir dist",
     "build": "tsc && rollup -c",
     "prepublishOnly": "npm run build",
-    "start": "serve .",
+    "start": "serve . -p 3000",
+    "test": "karma start test/karma.config.cjs",
     "update": "npm-check -u"
   },
   "repository": {
@@ -35,15 +36,26 @@
   },
   "homepage": "https://github.com/empatheticbot/on-intersection-element#readme",
   "devDependencies": {
-    "eslint": "^7.32.0",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-custom-elements": "^0.0.2",
+    "@types/chai": "^4.3.0",
+    "@types/mocha": "^9.0.0",
+    "chai": "^4.3.4",
+    "eslint": "7.32.0",
+    "eslint-config-prettier": "8.3.0",
+    "eslint-plugin-custom-elements": "0.0.4",
     "eslint-plugin-github": "4.1.5",
+    "karma": "^6.3.9",
+    "karma-chai": "^0.1.0",
+    "karma-chrome-launcher": "^3.1.0",
+    "karma-coverage": "^2.1.0",
+    "karma-mocha": "^2.0.1",
+    "karma-mocha-reporter": "^2.2.5",
+    "mocha": "^8.4.0",
     "npm-check": "5.9.2",
-    "prettier": "^2.4.1",
-    "rollup": "^2.56.0",
-    "serve": "12.0.0",
-    "typescript": "4.3.5"
+    "rollup": "2.62.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "serve": "13.0.2",
+    "ts-node": "10.4.0",
+    "typescript": "4.5.4"
   },
   "publishConfig": {
     "access": "public"
