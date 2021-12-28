@@ -8,9 +8,7 @@
 $ npm install --save @empatheticbot/on-intersection-element
 ```
 
-## Usage
-
-### Import
+## Import
 
 **Import as ES module:**
 
@@ -26,7 +24,7 @@ import '@empatheticbot/on-intersection-element'
 
 _Note that the path is relative to the root of your project, this may not be the case in your application, so check to make sure your path is correct and the module is being served._
 
-### Markup
+## Usage
 
 **Example usage to create back to top anchor once header scrolls out of view:**
 
@@ -53,7 +51,30 @@ _Note that the path is relative to the root of your project, this may not be the
 </on-intersection>
 ```
 
-### Attributes
+The `on-intersection` component recieves the class `show` when intersecting the element with id `of` is in view. This allows custom styles to be used for animating your element, for instance, this could be used to create a sticky footer button that animates in and out from the bottom of the screen:
+
+```css
+on-intersection {
+  display: flex;
+  justify-content: flex-end;
+  position: sticky;
+  margin-right: 4vw;
+  bottom: 4vh;
+  transition: 0.5s;
+}
+
+on-intersection:not(.show) {
+  bottom: 0;
+}
+```
+
+Finally, the changes performed to `on-intersection` when hiding/showing are:
+
+- Sets style `visibility` to `hidden|visible`
+- Sets style `opacity` to `0|1`
+- Adds/removes class of `show`
+
+## Attributes
 
 - **`of`** - the **id** of the element to be observed for intersection.
 - **`hide`** (optional) - if true, the child elements of `on-intersection` will be hidden while the element with the `of` **id** is intersecting with the viewport.
