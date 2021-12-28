@@ -1,6 +1,6 @@
 {
   "name": "@empatheticbot/on-intersection-element",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Custom Element used to hide and show elements based on whether the viewport is intersecting other elements.",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
