@@ -51,7 +51,7 @@ _Note that the path is relative to the root of your project, this may not be the
 </on-intersection>
 ```
 
-The `on-intersection` component recieves the class `show` when intersecting the element with id `of` is in view. This allows custom styles to be used for animating your element, for instance, this could be used to create a sticky footer button that animates in and out from the bottom of the screen:
+The `on-intersection` component recieves the class `show` when the element with id `of` is in view. This allows custom styles to be used for animating your element. For instance, this could be used to create a sticky footer button that animates in and out from the bottom of the screen:
 
 ```css
 on-intersection {
